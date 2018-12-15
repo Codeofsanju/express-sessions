@@ -14,6 +14,12 @@ app.use(session({
     saveUninitialized: true
 }));
 
+app.use((req, res, next) =>{
+    if(!req.session.counter) req.session.counter = 0;
+    console.log('SESSION', req.session);
+    next();
+});
+
 
 app.get('/', (req, res, next) =>{
     res.send('hello');
