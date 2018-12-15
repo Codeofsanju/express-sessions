@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Codeofsanju/express-sessions#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "express-session": "^1.15.6"
+    "express-session": "^1.15.6",
+    "nodemon": "^1.18.9"
   }
 }
